@@ -7,7 +7,9 @@
 > Breaking changes, new features, and bug fixes will be added frequently as I build out real apps using this template.  
 > Feedback and contributions are welcome!
 
-**SmartApp UI Kit** is a reusable AI-first dashboard template built with React, Tailwind CSS, and Framer Motion.
+**SmartApp UI Kit** is a reusable AI-first **React + TypeScript + Tailwind CSS** dashboard template with Framer Motion animations.
+
+> **All new application code must be TypeScript.** Do not add new `.js` or `.jsx` source files unless explicitly approved.
 
 ## 🚀 Features
 - Modern dashboard layout…
@@ -19,6 +21,7 @@
 - [Cursor](https://www.cursor.so/)
 - [ChatGPT (OpenAI)](https://chat.openai.com/)
 - [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Cypress](https://www.cypress.io/)
 - [Jest](https://jestjs.io/)
@@ -52,12 +55,17 @@ Follow these steps to set up the project locally:
    ```
    The app will be available at [http://localhost:5173](http://localhost:5173) by default.
 
-4. **Run unit tests:**
+4. **Run TypeScript checks:**
+   ```bash
+   npm run typecheck
+   ```
+
+5. **Run unit tests:**
    ```bash
    npm test
    ```
 
-5. **Run E2E tests (with dev server running):**
+6. **Run E2E tests (with dev server running):**
    ```bash
    npm run cypress:open
    # or
@@ -112,7 +120,7 @@ You can keep the testing setup and structure as a foundation for your own app's 
 ### Unit & Integration Tests
 
 - **Framework:** Jest + React Testing Library
-- **Location:** Test files are placed next to their implementation files (e.g., `MyComponent.jsx` and `MyComponent.test.jsx`).
+- **Location:** Test files are placed next to their implementation files (e.g., `MyComponent.tsx` and `MyComponent.test.tsx`).
 - **Coverage:** The suite covers components, store logic, and API clients.
 
 **To run all unit tests with coverage:**
